@@ -47,7 +47,7 @@ class DafnyLexer(RegexLexer):
             (r'(\|)', Operator),
             (r'(;|::|:|\.\.|`)', Punctuation),
             (r'[{(\[,.\])}]', Punctuation),
-            (r'(==|!=|<=|>=|=|&&|[-<>+*/%])', Operator),
+            (r'(==|!=|<=|>=|=|&&|[-<>+*/%!?])', Operator),
             (r'(in)\b', Operator),
             (r'(this|old|print)\b', Name.Function.Magic),
             (r'(multiset)(\s*)(\()', bygroups(Name.Function.Magic, Text, Punctuation)),
