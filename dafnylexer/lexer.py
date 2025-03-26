@@ -39,7 +39,6 @@ class DafnyLexer(RegexLexer):
         ],
         'string': [
             (r'"(\\\\|\\"|[^"])*"', String.Double),
-            (r"'(\\\\|\\'|[^'])*'", String.Single),
         ],
         'root': [
             include('commentsandwhitespace'),
